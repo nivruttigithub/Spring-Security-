@@ -6,5 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoRestController {
 
-
+    @GetMapping("/msg")
+    public String getMessage()
+    {
+        return " **** @@ Good Morning @@ **** \n ##(Base Authentication)## \n Basic Security Acheive Successfully ..... ";
+    }
 }
